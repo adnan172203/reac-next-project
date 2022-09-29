@@ -1,0 +1,528 @@
+/*================================================
+Default CSS
+=================================================*/
+@import url('https://fonts.googleapis.com/css2?family=Joti+One&family=Roboto:wght@400;500;700&display=swap');
+:root {
+  --fontFamily: 'Roboto', sans-serif;
+  --authFontFamily: 'Joti One', cursive;
+  --mainColor: #0081ea;
+  --mainColor2: #041f35;
+  --componentColor: #092943;
+  --optionalColor: #143a58;
+  --whiteColor: #ffffff;
+  --blackColor: #221638;
+  --fontSize: 14px;
+  --transition: 0.5s;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-size: var(--fontSize);
+  font-family: var(--fontFamily);
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+}
+
+a {
+  color: var(--whiteColor);
+  -webkit-transition: var(--transition);
+  transition: var(--transition);
+  text-decoration: none;
+  outline: 0 !important;
+}
+
+:focus {
+  outline: 0 !important;
+}
+
+.d-table {
+  width: 100%;
+  height: 100%;
+}
+
+.d-table-cell {
+  vertical-align: middle;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+b-100 {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.mt-30 {
+  margin-top: 30px;
+}
+
+.pt-100 {
+  padding-top: 100px;
+}
+
+.pb-100 {
+  padding-bottom: 100px;
+}
+
+.ptb-70 {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.pt-70 {
+  padding-top: 70px;
+}
+
+.pb-70 {
+  padding-bottom: 70px;
+}
+
+.pt-30 {
+  padding-top: 30px;
+}
+
+.pb-30 {
+  padding-bottom: 30px;
+}
+
+.container {
+  max-width: 1230px;
+}
+
+.bg-f9f9f9 {
+  background-color: #f9f9f9;
+}
+
+.bg-f5f5f5 {
+  background-color: #f5f5f5;
+}
+
+.bg-main-color {
+  background-color: var(--mainColor2);
+}
+
+.bg-main-color .section-title p {
+  color: var(--blackColor);
+}
+
+.home-background {
+  background-color: var(--mainColor2);
+}
+
+/*================================================
+Navbar Area CSS
+=================================================*/
+
+.crunch-nav {
+  background-color: var(--whiteColor);
+  padding: 1rem;
+}
+
+.crunch-nav .navbar-left-side a {
+  color: #7e7d7d;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.navbar-middle ul {
+  display: flex;
+  justify-content: space-evenly;
+  width: 40%;
+  list-style: none;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.navbar-middle ul li img {
+  width: 20%;
+}
+
+.crunch-nav .navbar {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.crunch-nav .navbar-right-side ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-evenly;
+}
+
+.crunch-navbar-option ul li img {
+  height: 26px;
+}
+
+.navbar-middle {
+  margin: 0 auto;
+}
+
+.navbar-right-side {
+  width: 17%;
+}
+
+/*================================================
+Main content
+=================================================*/
+.main-content {
+  display: flex;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.main-content .left-content {
+  width: 32%;
+  position: relative;
+}
+
+.left-content .user-info {
+  display: flex;
+}
+
+.left-content .user-info::after {
+  content: '';
+  border-bottom: 1px solid #eee;
+  width: 54%;
+  position: absolute;
+  top: 14%;
+}
+
+.left-content .user-info img {
+  width: 15%;
+  border-radius: 50%;
+  align-self: center;
+}
+
+.account-feature ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.side-icon {
+  display: flex;
+  align-items: flex-start;
+}
+
+.account-feature ul li .side-icon {
+  align-items: center;
+}
+
+.icon {
+  width: 18px;
+  margin-right: 10px;
+}
+
+.account-feature ul li img {
+  max-width: 100%;
+}
+
+.account-settings ul {
+  list-style: none;
+  padding-left: 0px;
+}
+
+.account-settings ul li img {
+  max-width: 100%;
+}
+
+.account-settings .settings-icon-body {
+  display: flex;
+  align-items: center;
+}
+
+.settings-icon-body .settings-icon {
+  width: 18px;
+  margin-right: 10px;
+}
+
+.left-content .account-feature::after {
+  content: '';
+  border-bottom: 1px solid #eee;
+  width: 54%;
+  position: absolute;
+}
+
+.left-content .account-settings::after {
+  content: '';
+  border-bottom: 1px solid #eee;
+  width: 54%;
+  position: absolute;
+}
+
+.account-stats .accounts-stats-info {
+  display: flex;
+}
+
+.accounts-stats-info img {
+  align-self: center;
+  margin-right: 15px;
+  height: 138px;
+}
+
+.account-stats-count {
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.account-stats-count ul {
+  list-style: none;
+  padding-left: 0px;
+}
+
+.account-stats-count ul li {
+  margin-bottom: 10px;
+}
+
+.mid-content .user-welcome {
+  border: 1px solid #eee;
+  padding: 11px;
+  border-radius: 7px;
+}
+
+.main-content .mid-content {
+  width: 27%;
+}
+
+.mid-content .user-welcome h3 {
+  font-size: 29px;
+  font-weight: 100;
+  line-height: 0px;
+}
+
+.user-stories .active-stories {
+  display: flex;
+}
+
+.mid-content .user-stories {
+  display: flex;
+}
+
+.user-stories .add-stories {
+  height: 106px;
+  width: 30%;
+  margin-top: 31px;
+  border: 1px solid #eee;
+  border-radius: 6px;
+  position: relative;
+}
+
+.add-story-user {
+  position: absolute;
+  top: 24%;
+  left: 9%;
+  text-align: center;
+}
+
+.add-story-user label {
+  background: #554e4e;
+  padding: 8px 14px 8px 14px;
+  border-radius: 50px;
+  color: #fff;
+  font-size: 19px;
+}
+
+.active-stories .story-user {
+  margin-left: 10px;
+}
+
+.create-post-area {
+  border: 1px solid #eee;
+}
+
+.mid-content .create-post {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 7px;
+}
+
+.create-post .current-user-image {
+  width: 11%;
+}
+
+.create-post .current-user-image img {
+  border-radius: 50%;
+}
+
+.create-post-content input {
+  width: 100%;
+  padding: 10px 0px 10px 10px;
+  border-radius: 40px;
+  border: none;
+  background: #eee;
+}
+
+.create-post .create-post-content {
+  width: 100%;
+  padding: 10px;
+}
+
+.create-post-option {
+  position: relative;
+}
+
+.create-post-option input {
+  opacity: 0;
+  position: absolute;
+  top: 30%;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.create-post-area .create-post-option {
+  display: flex;
+  justify-content: space-around;
+  padding-right: 30px;
+}
+
+.create-post-option h5 {
+  width: 25px;
+  display: flex;
+  align-items: center;
+}
+
+.create-post-option img {
+  margin-right: 10px;
+}
+
+.main-content .right-content {
+  width: 19%;
+  margin: 0 auto;
+}
+
+.right-content .event-content {
+  border: 1px solid #eee;
+}
+
+.event-details ul li {
+  width: 5%;
+  list-style: none;
+  display: flex;
+}
+
+.event-details ul {
+  display: flex;
+  justify-content: space-around;
+  padding-left: 0;
+  padding-left: 13px;
+  padding-right: 40px;
+}
+.event-details ul li img {
+  margin-left: -28px;
+  margin-right: 8px;
+}
+
+.upcoming-events ul li .event-content {
+  display: flex;
+}
+
+.upcoming-events ul li {
+  list-style: none;
+}
+
+.event-content-body ul li {
+  width: 8%;
+  display: flex;
+}
+
+.event-content-body ul {
+  display: flex;
+  /* justify-content: space-between; */
+  padding-left: 0;
+}
+
+.event-content .event-content-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.upcoming-events ul {
+  padding-left: 0;
+}
+
+.event-content .event-conent-image {
+  width: 100%;
+}
+
+svg:hover {
+  fill: red;
+}
+
+/*=================================== 
+    
+    .crunch-nav .option-item {
+      color: #fff;
+    }
+    
+    .crunch-nav .navbar-left-side {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+    }
+    
+    .crunch-nav .crunch-user-overview p {
+      margin-bottom: 0;
+    }
+    
+    .crunch-nav .navbar-right-side {
+      width: 27%;
+    }
+    
+    .crunch-nav .crunch-navbar-option {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+      justify-content: space-evenly;
+    }
+
+    .crunch-user-overview {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      color: var(--whiteColor);
+    }
+    
+    .crunch-user-overview div {
+      padding-right: 10px;
+    }
+    
+    .crunch-access-icon span {
+      padding-right: 1rem;
+    }
+    
+    .navbar-search-box img {
+      position: absolute;
+      top: 14px;
+      left: 11px;
+    }
+    
+    .navbar-left-side .navbar-search-box {
+      position: relative;
+      margin-left: 16px;
+    }
+
+    */
